@@ -1,0 +1,19 @@
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Set the default handler.
+DirectoryIndex index.php
+
+# Beauty URLs
+# If your server does not support this feature, you should edit the beautyurls boolean in the settings.php file so it says false instead of true.
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^index.html$ index.php [L,QSA]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+</IfModule>
+
+# END WordPress
