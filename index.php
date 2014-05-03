@@ -1,9 +1,16 @@
 <?php
+
+/*
+	SQLBoon Database Manager
+	version 0.0.3 (non-functional)
+	May 3, 2014
+*/
+
 // Start the session
 session_start(); 
 
 // Define a static keyword for referencing the current working directory. Makes it easier to support subdirectory structures.
-define('ROOT_DIR', getcwd());
+define('ROOT_DIR', getcwd().'/');
 // Define a variable name as the value of 1 so we can check if potentially unsafe code is actually accessed within this index.php controller.
 define('IN_BOON', 1);
 // Specify that the server should show you all PHP errors.  Good for debugging.  Disable/remove for production sites.
@@ -22,10 +29,12 @@ global $settings, $message;
 $message = '';
 
 // Load the appropriate model for the current URL.
-if (file_exists(arg(0))) {
-	include_once('system/'.arg(0).'.php');
+if (file_exists(ROOT_DIR.'system/'.arg(0).'.php')) {
+	include_once(ROOT_DIR.'system/'.arg(0).'.php');
+} else if (file_exists(ROOT_DIR.'pages/'.arg(0).'.php')) {
+	include_once(ROOT_DIR.'pages/'.arg(0).'.php');
 } else {
-	include_once('errorhandling/404error.php');
+	include_once(ROOT_DIR.'system/errorhandling/404error.php');
 }
 
 // End cap should be fine for index.php, but it is not necessary.  Do not add an end cap in the system/model files.

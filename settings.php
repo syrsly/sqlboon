@@ -1,5 +1,7 @@
 <?php 
 
+global $settings;
+
 $settings['cmessage'] = '<a href="https://github.com/joshmaines/sqlboon">SQLBoon created by Joshua Maines</a>';
 
 //SETTINGS START

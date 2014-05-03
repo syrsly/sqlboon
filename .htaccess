@@ -13,6 +13,7 @@ DirectoryIndex index.php
 	RewriteEngine On
 	RewriteRule ^index.html$ index.php [L,QSA]
 	RewriteRule ^errorhandling/404error.php$ index.php?q=404 [L,QSA]
+	RewriteRule ^system$ index.php?q=404 [L,QSA]
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 </IfModule>

@@ -22,6 +22,6 @@ Site requirements are another concern.  Not all webhosts support beautified URLs
 
 Current state
 =======
-Version: 0.0.1 (non-functional)
+Version: 0.0.2 (non-functional)
 
 Project is new and meant to show my ability to understand design patterns and security concepts.  It is far from functional but will progress quickly on my days off from work.  I want this project to be useful for everyone, so make sure you post a feature request if what you want is not already listed.  Also, once the project reachs version 1.0 status, feel free to fork.
