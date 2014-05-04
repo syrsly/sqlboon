@@ -7,6 +7,9 @@
 	global $settings;
 	
 	//insert login check code
+	
+	//insert login template/view functionality
+	//note: login view should be reusable for various sections of a site and not just for a page.
 
 
 // Do not add end tag for PHP since this is nested inside a controller.

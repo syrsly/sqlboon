@@ -1,5 +1,10 @@
 <?php
 
+if (!defined('IN_BOON')) {
+	header('HTTP/1.1 404 Not Found', 404);
+	return;
+}
+
 function init_path() {
   if (!empty($_GET['q'])) {
     $_GET['q'] = trim($_GET['q'], '/');
@@ -9,8 +14,9 @@ function init_path() {
   }
 }
 
-// arg function borrowed from Drupal CMS and modified.
-// arg function turns beautified URLs into readable variables within a nested array of strings inside an arguments array.
+/* arg function borrowed from Drupal CMS and modified for use by SQLBoon.
+	arg function turns beautified URLs into readable variables within a nested array of strings inside an arguments array.
+	note: arg function will work without beauty URLs enabled, because it relies on the $_GET['q'] variable. */
 function arg($index = NULL, $path = NULL) {
   static $arguments;
 
