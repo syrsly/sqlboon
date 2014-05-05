@@ -1,4 +1,4 @@
-sqlboon
+SQLBoon
 =======
 
 PHP-powered MySQL database management system and backup manager with optional login feature.
@@ -6,12 +6,15 @@ PHP-powered MySQL database management system and backup manager with optional lo
 Features
 =======
 
-1. MVC structure, entire site runs through index.php (controller) and utilizes a template-based design (view) with predetermined content pieces (model).
-2. Beautified URLs/addresses, example: yoursite.com/sqlboon/backup/1 goes to the backup confirmation page before continuing to backup database #1.
-3. Optional login system (enabled by default), good to use if your site is going to always have SQLBoon on the server.
-4. Backs up MySQL databases using MySQLi connection.
-5. Restores MySQL databases using MySQLi connection.
-6. Lists previous backups up to a specified amount of backups.  Older backups are automatically deleted when limit is reached.
+1. MVC structure, entire site runs through index.php (controller) and utilizes a template-based design (view) with predetermined content pieces (models).
+2. Modular design allows for easy modification of site layout and functionality to suit your own needs.
+3. Beautified URLs/addresses, example: yoursite.com/sqlboon/backup/1 goes to the backup confirmation page before continuing to backup database #1.
+4. Optional login system (enabled by default), good to use if your site is going to always have SQLBoon on the server.
+5. Backs up MySQL databases using MySQLi connection. (Very useful if your hosting solution does not already provide a backup tool.)
+6. Restores MySQL databases using MySQLi connection with optional wipe of all tables beforehand.
+7. Lists previous backups up to a specified amount of backups.  Older backups are automatically deleted when limit is reached. (Saves space!)
+
+Submit your feature requests in the issues area.  I will pick a spare few features to be added in version 2.0 once version 1.0 is done.
 
 Installation
 =======
@@ -22,6 +25,6 @@ Site requirements are another concern.  Not all webhosts support beautified URLs
 
 Current state
 =======
-Version: 0.0.2 (non-functional)
+Version: 0.0.4 (non-functional)
 
-Project is new and meant to show my ability to understand design patterns and security concepts.  It is far from functional but will progress quickly on my days off from work.  I want this project to be useful for everyone, so make sure you post a feature request if what you want is not already listed.  Also, once the project reachs version 1.0 status, feel free to fork.
+Project is new and meant to show my ability to understand design patterns and security concepts.  It is far from functional but will progress quickly on my days off from work.  I want this project to be useful for everyone, so make sure you post a feature request if what you want is not already listed.  I would also love to hear about any similar projects out there.

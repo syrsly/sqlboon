@@ -2,8 +2,8 @@
 
 /*
 	SQLBoon Database Manager
-	version 0.0.3 (non-functional)
-	May 3, 2014
+	version 0.0.4 (non-functional)
+	May 4, 2014
 */
 
 // Start the session

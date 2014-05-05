@@ -12,6 +12,10 @@ $settings['cmessage'] = '<a href="https://github.com/joshmaines/sqlboon">SQLBoon
 // May cause problems on crappy webhosts.
 $settings['beautyurls'] = true; //default is true, set to false if problems occur with page links.
 
+//Login System
+// May be disabled by setting to false.  Default is true.
+$settings['loginsystem'] = true;
+
 //Template Variables (will be moved to templates directory later)
 $settings['title'] = 'SQLBoon'; //Title of the backup manager, default is "SQLBoon".
 $settings['description'] = 'Database management system'; //description of site.  Not really useful at all unless your favorites/bookmarks system uses site descriptions.

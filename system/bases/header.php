@@ -13,7 +13,7 @@ echo '<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>'.$settings['title'].'</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+	<meta charset="windows-1252" />
 	<meta name="description" content="'.$settings['description'].'" />';
 
 /* End cap is not necessary.
