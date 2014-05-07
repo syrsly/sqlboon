@@ -2,8 +2,8 @@
 
 /*
 	SQLBoon Database Manager
-	version 0.0.4 (non-functional)
-	May 4, 2014
+	version 0.0.5 (non-functional)
+	May 7, 2014
 */
 
 // Start the session
@@ -18,16 +18,26 @@ error_reporting(E_ALL);
 
 // Load settings file for system customization. This file instantiates many important variables within a settings array.
 require (ROOT_DIR.'settings.php');
+// Make sure the settings array and other important variables are available to everything within index.php.
+global $settings, $message, $content;
+// Set content variable to a blank message.  This is important for instantiation before concatenating content strings within each model.
+$content = '';
+// Set message variable to a blank message.  This is important for instantiation before concatenating message strings within each model.
+$message = '';
+
+//Check if base_directory string is empty and if it is, set it to a forward slash.
+//Otherwise, base_directory string has a value already and simply needs to have the beginning and end slashes added.
+if ($settings['base_directory'] !== '') {
+	$settings['base_directory'] = '/'.$settings['base_directory'].'/';
+} else {
+	$settings['base_directory'] = '/';
+}
+
 
 // Load the required libraries used by the site.
 // url.php handles the beautified URLs and outputs an array of arguments to a function called within index.php.
 require (ROOT_DIR.'libraries/url.php');
 init_path();
-
-// Make sure the settings array and other important variables are available to everything within index.php.
-global $settings, $message;
-// Set message variable to a blank message.  This is important for instantiation before concatenating message strings within each model.
-$message = '';
 
 // Load the appropriate model/view for the current URL.
 // Note: some pages are plain HTML and only require a view or template file without the need of a logic/model file.

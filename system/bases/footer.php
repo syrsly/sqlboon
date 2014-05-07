@@ -1,6 +1,6 @@
 <?php 
 
-// Include this file to generate the site-wide header code.
+// Include this file to generate the site-wide footer code.
 
 /* How this fits in the MVC (model, view, controller) pattern:
 	This is kind of a view inside a model inside a view.
@@ -9,16 +9,7 @@
 
 global $settings;
 	
-echo '<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>'.$settings['title'].'</title>
-	<meta charset="windows-1252" />
-	<meta name="description" content="'.$settings['description'].'" />
-	<link href="'.$settings['url'].'/css/site.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-';
+echo '</body></html>';
 
 /* End cap is not necessary.
 I advise against using the end cap on nested code,

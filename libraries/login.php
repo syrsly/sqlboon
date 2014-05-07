@@ -9,11 +9,15 @@ if (!defined('IN_BOON')) {
 //return false if not logged in
 function isLoggedIn() {
 	global $settings;
-	//If login system is disabled (false), always return true.
+	//If login system is disabled (false), always return true no matter what.  This is useful when testing and during development.
 	if ($settings['loginsystem'] == false) {
 		return true;
 	} else {
-		return false;
+		if ($_SESSION['is_logged_in'] == true) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
 
