@@ -47,7 +47,7 @@ $settings['sites'] = array(
 
 //The friendly name is used to easily recognise which database you wish to backup and is shown in the drop-down list
 //on the quick backup page.  Add and delete as required taking note of the location of the commas (,)
-'friendlyname' => array('Local Server', 'Online Server'),
+'name' => array('Local Server', 'Online Server'),
 
 //The hostname is the MySQL hostname, usually localhost.  Most people will not need to edit this.
 'hostname' => array('localhost', 'localhost'),
