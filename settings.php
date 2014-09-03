@@ -1,8 +1,12 @@
 <?php 
 
+	if (!defined('IN_BOON')) {
+		header('HTTP/1.1 404 Not Found', 404);
+		return;
+	}
 global $settings;
 
-$settings['cmessage'] = '<a href="https://github.com/joshmaines/sqlboon">SQLBoon created by Joshua Maines</a>';
+$settings['cmessage'] = '<a href="https://github.com/joshmaines/sqlboon">SQLBoon created by and licensed by Joshua Maines under the MIT license</a>';
 
 //SETTINGS START
 // Edit any of the variables' values below.

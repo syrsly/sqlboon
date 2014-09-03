@@ -1,0 +1,13 @@
+
+.menu {
+	color:#330000;
+	background-color:#000000;
+}
+.menu a {
+	color:#FFFFFF;
+	background-color:#333366;
+}
+.menu a:hover {
+	color:#FFFFFF;
+	background-color:#555588;
+}

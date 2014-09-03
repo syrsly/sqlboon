@@ -16,6 +16,11 @@ Features
 
 Submit your feature requests in the issues area.  I will pick a spare few features to be added in version 2.0 once version 1.0 is done.
 
+Completely Free
+=======
+
+This project is licensed under the MIT public domain license. Any and all parts of the project are completely open source and freely redistributable.
+
 Installation
 =======
 
@@ -25,6 +30,7 @@ Site requirements are another concern.  Not all webhosts support beautified URLs
 
 Current state
 =======
-Version: 0.0.4 (non-functional)
+Version: 0.0.5 (non-functional)
+Maintainer: Josh Maines
 
-Project is new and meant to show my ability to understand design patterns and security concepts.  It is far from functional but will progress quickly on my days off from work.  I want this project to be useful for everyone, so make sure you post a feature request if what you want is not already listed.  I would also love to hear about any similar projects out there.
+Project is new and meant to show my ability to understand design patterns and security concepts.  It is far from functional but will progress quickly on my days off from work.  I want this project to be useful for everyone, so make sure you post a feature request if what you want is not already listed.  I would also love to hear about any similar projects out there.  If you like my work, please consider donating to my GitTip fund at http://www.gittip.com/joshm or consider hiring me for a project.

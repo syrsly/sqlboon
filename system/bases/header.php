@@ -18,6 +18,12 @@ echo '<!DOCTYPE html>
 	<link href="'.$settings['url'].'/css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div class="menu">
+<a href="/index">Admin Home</a>
+<a href="/data">Data Archives</a>
+<a href="/users">User List</a>
+<a href="/logout">Log Out</a>
+</div>
 ';
 
 /* End cap is not necessary.
