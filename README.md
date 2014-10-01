@@ -1,9 +1,9 @@
 SQLBoon
 =======
 
-PHP-powered MySQL database management system and backup manager with optional login feature.
+PHP5-powered, modular MySQL database management system and backup manager with optional login feature.
 
-Features
+Features List
 =======
 
 1. MVC structure, entire site runs through index.php (controller) and utilizes a template-based design (view) with predetermined content pieces (models).
@@ -30,7 +30,7 @@ Site requirements are another concern.  Not all webhosts support beautified URLs
 
 Current state
 =======
-Version: 0.0.5 (non-functional)
+Version: 0.0.7 (non-functional)
 Maintainer: Josh Maines
 
-Project is new and meant to show my ability to understand design patterns and security concepts.  It is far from functional but will progress quickly on my days off from work.  I want this project to be useful for everyone, so make sure you post a feature request if what you want is not already listed.  I would also love to hear about any similar projects out there.  If you like my work, please consider donating to my GitTip fund at http://www.gittip.com/joshm or consider hiring me for a project.
+Project is non-profit but unsupported.  If you require support for SQLBoon, you may acquire my freelance IT services at my current hourly rate by using my site's contact form at http://www.tapskill.com/contact

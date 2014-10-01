@@ -17,7 +17,7 @@ $settings['cmessage'] = '<a href="https://github.com/joshmaines/sqlboon">SQLBoon
 $settings['beautyurls'] = true; //default is true, set to false if problems occur with page links.
 
 //Login System
-// May be disabled by setting to false.  Default is true.
+// May be disabled by setting to false.  Default is true. Only disable if security not required.
 $settings['loginsystem'] = true;
 
 //Template Variables (will be moved to templates directory later)
@@ -51,6 +51,8 @@ $settings['sites'] = array(
 
 //The friendly name is used to easily recognise which database you wish to backup and is shown in the drop-down list
 //on the quick backup page.  Add and delete as required taking note of the location of the commas (,)
+// This feature is extremely helpful when moving between local server databases and online server databases,
+// but you will need to have the same SQL Boon version installed on both servers.
 'name' => array('Local Server', 'Online Server'),
 
 //The hostname is the MySQL hostname, usually localhost.  Most people will not need to edit this.

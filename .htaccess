@@ -13,7 +13,7 @@ DirectoryIndex index.php
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteRule ^index.html$ index.php [L,QSA]
-	# Any attempt to access PHP files in the system directory will cause a 404 error page to show up.
+	# Any attempt to access PHP files in the system directory will cause a 404 error page to show up. Good disguise but not good security on its own.
 	RewriteRule ^system/*.php$ index.php?q=404 [L,QSA]
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
