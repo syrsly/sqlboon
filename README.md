@@ -6,8 +6,8 @@ PHP5-powered, modular MySQL database management system and backup manager with o
 Features List
 =======
 
-1. MVC structure, entire site runs through index.php (controller) and utilizes a template-based design (view) with predetermined content pieces (models).
-2. Modular design allows for easy modification of site layout and functionality to suit your own needs.
+1. MVC structure, entire site runs through index.php (controller) and utilizes a template-based design (view) with predetermined content pieces and data (models).
+2. Modular design allows for easy modification of site layout and functionality to suit your own needs, though this is far simpler than a CMS like Drupal.
 3. Beautified URLs/addresses, example: yoursite.com/sqlboon/backup/1 goes to the backup confirmation page before continuing to backup database #1.
 4. Optional login system (enabled by default), good to use if your site is going to always have SQLBoon on the server.
 5. Backs up MySQL databases using MySQLi connection. (Very useful if your hosting solution does not already provide a backup tool.)
@@ -19,7 +19,7 @@ Submit your feature requests in the issues area.  I will pick a spare few featur
 Completely Free
 =======
 
-This project is licensed under the MIT public domain license. Any and all parts of the project are completely open source and freely redistributable.
+This project is licensed under the MIT public domain license. Any and all parts of the project are completely open source and freely redistributable.  I ask that you use my work as a stepping stone to get your own projects done.  If you use my work, thanks is appreciated but not required nor expected.
 
 Installation
 =======
