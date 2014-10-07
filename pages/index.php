@@ -7,16 +7,12 @@
 		return;
 	}
 	
-	include_once(ROOT_DIR.'system/bases/header.php');
+echo Header();
+echo Title(); ?>
 
-?>
-
-<?php echo $settings['title']; ?>
-<?php generateSiteMenu(); ?>
-
-<h1><?php echo $settings['title']; ?></h1>
-<p>Welcome to <?php echo $settings['title']; ?>, your MySQL database manager!
-This management system will allow you to backup and restore databases using .sql files.</p>
+<h1><?php echo Title(); ?></h1>
+<p>Welcome to your MySQL database manager!
+This management system will allow you to easily backup and restore databases.  You can place this manager inside a folder on any site that uses PHP5 and supports MySQLi.  I hope this tool solves a lot of problems for you, but in the case that you need support for it, you can <a href="http://www.tapskill.com/contact">request a quote</a>.</p>
 
 
 <?php 

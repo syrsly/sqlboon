@@ -2,8 +2,8 @@
 
 /*
 	SQLBoon Database Manager
-	version 0.0.7
-	October 1, 2014
+	version 0.0.8
+	October 7, 2014
 */
 
 // Start the session
@@ -39,16 +39,13 @@ if ($settings['base_directory'] !== '') {
 require (ROOT_DIR.'libraries/url.php');
 init_path();
 
-// Load the appropriate model/view for the current URL.
-// Note: some pages are plain HTML and only require a view or template file without the need of a logic/model file.
-if (file_exists(ROOT_DIR.'system/'.arg(0).'.php')) {
-	include_once(ROOT_DIR.'system/'.arg(0).'.php');
-	//For additional security through obscurity, you could add a set of numbers/letters to the file names for all system files.
-	//Example: include_once(ROOT_DIR.'system/'.arg(0).'55r1sa259535b.php');
-	//However, this system will be secure enough to not need to rely on obscurity at all.
-} else if (file_exists(ROOT_DIR.'pages/'.arg(0).'.php')) {
+// Load the appropriate model/view for the current URL.  The model will load first, then the view.
+if (file_exists(ROOT_DIR.'pages/'.arg(0).'.php')) {
+	include_once(ROOT_DIR.'system/common.php');
+	include_once(ROOT_DIR.'pagedata/'.arg(0).'.php');
 	include_once(ROOT_DIR.'pages/'.arg(0).'.php');
 } else {
+	// 404 error page, could also store records of every 404 error that happens if wanted but this is not a CMS, just a database backup manager.
 	include_once(ROOT_DIR.'system/errorhandling/404error.php');
 }
 
